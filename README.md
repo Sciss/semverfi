@@ -1,29 +1,24 @@
 # semverfi
 
-[![Build Status](https://secure.travis-ci.org/softprops/semverfi.png)](http://travis-ci.org/softprops/semverfi)
+[![Build Status](https://github.com/Sciss/semverfi/workflows/Scala%20CI/badge.svg?branch=main)](https://github.com/Sciss/semverfi/actions?query=workflow%3A%22Scala+CI%22)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/de.sciss/semverfi_2.13/badge.svg)](https://maven-badges.herokuapp.com/maven-central/de.sciss/semverfi_2.13)
 
-A library for parsing, querying, and ordering the always faithful, always loyal [semantic versions][sv]
-
+A library for parsing, querying, and ordering the always faithful, always loyal [semantic versions][sv].
+Originally written by Doug Tangren (softprops).
 
 ## install
 
-### the cut and paste method
+### the cut-and-paste method
 
 Add the following to your sbt build definition
 
-    libraryDependencies += "net.leibman" % "semverfi" % "0.2.0"
-    
-### the civilized method
+    libraryDependencies += "de.sciss" %% "semverfi" % "0.3.0"
 
-Using [ls](https://github.com/softprops/ls#readme)
-
-    ls-install semverfi
+Supported Scala versions are 3, 2.13, 2.12, platforms JVM and JS.
 
 ## usage.
 
-
 ### it parses
-
 
 ```scala
 import semverfi._

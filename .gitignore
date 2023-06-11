@@ -9,3 +9,5 @@ sbt
 .settings
 *.sjsir
 *.class
+/*.bsp
+/*.idea

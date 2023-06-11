@@ -103,7 +103,7 @@ trait SemVersionOrdering extends Ordered[SemVersion] {
   private def byIds(a: Seq[String], b: Seq[String]): Int = {
     val Dig = """(\d+)""".r
     def zipCompare(a: Seq[String], b: Seq[String]) =
-      ((None: Option[Int]) /: a.zip(b)) {
+      a.zip(b).foldLeft(None: Option[Int]) {
         case (Some(c), _) => Some(c)
         case (_, (Dig(k), Dig(v))) =>
           (k.toInt compareTo v.toInt) match {
